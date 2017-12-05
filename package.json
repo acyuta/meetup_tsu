@@ -1,0 +1,32 @@
+{
+  "name": "meetup-tsu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acyuta/meetup_tsu.git"
+  },
+  "keywords": [
+    "meetup",
+    "tsu",
+    "nodejs"
+  ],
+  "dependencies": {
+      "request" : "latest",
+      "node-geocoder": "latest",
+      "pug": "latest",
+      "merge": "latest",
+      "moment": "latest",
+      "fs": "latest"
+  },
+  "author": "Akim Glushkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acyuta/meetup_tsu/issues"
+  },
+  "homepage": "https://github.com/acyuta/meetup_tsu#readme"
+}
