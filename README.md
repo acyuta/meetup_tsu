@@ -1,5 +1,7 @@
-README
+Weekend Timetable Maker (parse Meetup.com)
 ===========
+
+Developed on NodeJS
 
 + Prepare
 ```
