@@ -9,10 +9,13 @@ const API_KEY = '35534110625c4553257c3073232542a';
 const upcomingUrl = "/find/upcoming_events";
 const API_POINT = "https://api.meetup.com";
 const city = "London";
-const topic = "Yoga";
+const topic = "Tech";
+
 const DATE_FORMAT = "YYYY-MM-DDTHH:mm:ss"
 const FILE_NAME = "answer.html"
 const DEBUG = false;
+
+
 var today = moment().toDate();
 var endDate = moment().add(7,'d').toDate();
 
@@ -146,7 +149,7 @@ function event(date,title,address,annotations){
 
 
 function generateHtml(data) {
-	var opts = {pretty: true, pageTitle:"Meetups"};
+	var opts = {pretty: true, pageTitle:"Meetups in " + city + ": " + topic};
 	var html = pug.renderFile('result.pug',merge(opts,data));
 	fs.writeFile(FILE_NAME, html, function(err){
 		if (err) {

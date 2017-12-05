@@ -17,11 +17,12 @@ html(lang="en")
 				each val, index in values				
 					h2 #{val.title}
 						each event in val.events
-							.card
+							div(class=['card','bottom-padding'])
 								.card-header #{event.title}
 								.card-body
-									h6(class=['card-subtitle','mb-2','text-muted']) #{event.address}
-									div(class=['card-text', 'small']) !{event.text}
+									span(class=['badge', 'badge-pill', 'badge-info']) #{event.address}
+									div(class='main')
+										div(class=['card-text', 'small']) !{event.text}
 								.card-footer
 									small(class='text-muted') #{event.date}
 						else
